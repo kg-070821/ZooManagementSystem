@@ -171,7 +171,7 @@ public class Manager extends javax.swing.JFrame {
     String query1="delete from employee where Emp_id='"+delete+"';";
     stmt1.executeUpdate(query1);
     JOptionPane.showMessageDialog(this,"Employee Deleted");
-                  LOGIN m=new LOGIN();
+                                Welcomw m=new Welcomw();
                                 m.setVisible(true);
                                 this.setVisible(false); 
                             
