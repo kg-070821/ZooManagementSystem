@@ -35,7 +35,7 @@ public class LOGIN extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
+ //added functions
         buttonGroup1 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -70,10 +70,10 @@ public class LOGIN extends javax.swing.JFrame {
 
         jLabel3.setText("User ID");
 
-        jLabel4.setText("PASSWORD");
+        jLabel4.setText("PASSWORD");  //password_text
 
         pf1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-
+1
         jButton1.setText("SUBMIT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -230,7 +230,7 @@ public class LOGIN extends javax.swing.JFrame {
                           else
                           {
                            String[] choice={"Add Diet","Shown Diet Database"};
-                           int responses = JOptionPane.showOptionDialog(null, "Which Action Do you Want to Perform?",null, JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null, choice,null);
+                           int responses = JOptionPane.showOptionDialog(null, "Select Appropriate Action?",null, JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null, choice,null);
                            if(responses==0)
                            {
                             diet m=new diet();
