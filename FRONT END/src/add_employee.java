@@ -336,22 +336,47 @@ public class add_employee extends javax.swing.JFrame {
     String typ="NULL";
     switch(cb2.getSelectedIndex())
     {
-        case 0: typ="A+";break;
-        case 1: typ="A-";break;      
-        case 2: typ="B+";break;
-        case 3: typ="B-";break;
-        case 4: typ="AB+";break;
-        case 5: typ="AB-";break;
-        case 6: typ="O+";break;
-        case 7: typ="O-";break;
+        case 0: 
+            typ="A+";
+            break;
+        case 1: 
+            typ="A-";
+            break;      
+        case 2: 
+            typ="B+";
+            break;
+        case 3: 
+            typ="B-";
+            break;
+        case 4: 
+            typ="AB+";
+            break;
+        case 5: 
+            typ="AB-";
+            break;
+        case 6: 
+            typ="O+";
+            break;
+        case 7: 
+            typ="O-";
+            break;
+        // DEFAULT CASE?
     }
     String ty="NULL";
     switch(cb3.getSelectedIndex())
     {
-        case 0: ty="Manager";break;
-        case 1: ty="Cashier";break;      
-        case 2: ty="Doctor";break;
-        case 3: ty="Employee";break;
+        case 0: 
+            ty="Manager";
+            break;
+        case 1: 
+            ty="Cashier";
+            break;      
+        case 2: 
+            ty="Doctor";
+            break;
+        case 3: 
+            ty="Employee";
+            break;
     }
     if(name.isEmpty()|| dob.isEmpty()||contact.isEmpty()||add.isEmpty()||pass.isEmpty())
     {
@@ -368,7 +393,8 @@ public class add_employee extends javax.swing.JFrame {
         {
            Class.forName("java.sql.DriverManager");
            Connection con = (Connection)
-     DriverManager.getConnection("jdbc:mysql://localhost:3306/zoo","root","1234");
+     DriverManager.getConnection("jdbc:mysql://localhost:3306/zoo","root","KKKKKKKKGGGGG");
+            //Better to create a new user instead of going for root.
     Statement stmt=(Statement)con.createStatement();   
     String query="Insert Into employee values ('"+id+"','"+name+"','"+dob+"','"+typ+"','"+contact+"','"+doj+"','"+ty+"','"+type+"','"+add+"','"+pass+"');";
     stmt.executeUpdate(query);
